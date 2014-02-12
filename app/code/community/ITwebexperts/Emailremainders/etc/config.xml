@@ -22,7 +22,7 @@
             <core_block_abstract_to_html_before>
                 <observers>
                     <emailremainders_customer_email_tab_add>
-                        <class>emailermainders/observer</class>
+                        <class>emailremainders/observer</class>
                         <method>onCustomerEmailsTabAdd</method>
                     </emailremainders_customer_email_tab_add>
                 </observers>

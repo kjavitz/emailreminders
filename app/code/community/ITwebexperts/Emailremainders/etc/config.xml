@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <ITwebexperts_Emailremainders>
+            <version>1.0.0</version>
+        </ITwebexperts_Emailremainders>
+    </modules>
+    <global>
+        <models>
+            <emailremainders>
+                <class>ITwebexperts_Emailremainders_Model</class>
+            </emailremainders>
+        </models>
+        <helpers>
+            <emailremainders>
+                <class>ITwebexperts_Emailremainders_Helper</class>
+            </emailremainders>
+        </helpers>
+    </global>
+    <adminhtml>
+        <events>
+            <core_block_abstract_to_html_before>
+                <observers>
+                    <emailremainders_customer_email_tab_add>
+                        <class>emailermainders/observer</class>
+                        <method>onCustomerEmailsTabAdd</method>
+                    </emailremainders_customer_email_tab_add>
+                </observers>
+            </core_block_abstract_to_html_before>
+        </events>
+    </adminhtml>
+</config> 

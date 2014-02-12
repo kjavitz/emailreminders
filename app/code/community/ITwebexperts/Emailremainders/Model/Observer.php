@@ -14,7 +14,7 @@ class ITwebexperts_Emailremainders_Model_Observer
             return;
         }
         $block->addTabAfter('emailremainders', array(
-           'label' => $this->getModuleHelper()->__('Emails'),
+            'label' => $this->getModuleHelper()->__('Emails'),
             'content' => '',
         ), 'tags');
     }

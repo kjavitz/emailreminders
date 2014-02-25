@@ -287,3 +287,12 @@ skin/frontend/default/modern/
 skin/frontend/enterprise
 skin/install/
 var/
+app/design/frontend/base/default/layout/rentalbundles.xml
+app/code/community/ITwebexperts/
+app/design/frontend/base/default/template/rentalbundles/
+app/etc/modules/ITwebexperts_Rentalbundles.xml
+app/design/adminhtml/default/default/layout/request4quote.xml
+app/etc/modules/ITwebexperts_Request4quote.xml
+app/design/frontend/base/default/template/request4quote/
+app/design/frontend/base/default/layout/request4quote.xml
+app/design/adminhtml/default/default/template/request4quote/

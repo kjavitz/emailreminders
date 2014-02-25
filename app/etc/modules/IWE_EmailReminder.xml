@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <IWE_EmailReminder>
+            <active>true</active>
+            <codePool>local</codePool>
+        </IWE_EmailReminder>
+    </modules>
+</config>

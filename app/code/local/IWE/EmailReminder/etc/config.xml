@@ -2,7 +2,7 @@
 <config>
     <modules>
         <IWE_EmailReminder>
-            <version>0.0.1</version>
+            <version>0.0.2</version>
         </IWE_EmailReminder>
     </modules>
 
@@ -22,5 +22,25 @@
                 <class>IWE_EmailReminder_Helper</class>
             </iwe_emailreminder>
         </helpers>
+        <resources>
+            <iwe_emailreminder_setup>
+                <setup>
+                    <module>IWE_EmailReminder</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </iwe_emailreminder_setup>
+            <iwe_emailreminder_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </iwe_emailreminder_write>
+            <iwe_emailreminder_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </iwe_emailreminder_read>
+        </resources>
     </global>
 </config>

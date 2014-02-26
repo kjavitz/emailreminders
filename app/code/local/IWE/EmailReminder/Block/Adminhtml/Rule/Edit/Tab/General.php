@@ -110,10 +110,10 @@ class IWE_EmailReminder_Block_Adminhtml_Rule_Edit_Tab_General extends AW_Followu
 
         # event_type field
         $fieldset->addField(
-            'sales_rep', 'select',
+            'sales_rep_id', 'select',
             array(
                 'label' => $this->__('Sales Rep'),
-                'name' => 'sales_rep',
+                'name' => 'sales_rep_id',
                 'values' => $this->getSalesPersonList(),
                 'required' => true,
             )

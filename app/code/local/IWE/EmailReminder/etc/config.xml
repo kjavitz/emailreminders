@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <IWE_EmailReminder>
+            <version>0.0.1</version>
+        </IWE_EmailReminder>
+    </modules>
+
+    <global>
+        <blocks>
+            <iwe_emailreminder>
+                <class>IWE_EmailReminder_Block</class>
+            </iwe_emailreminder>
+            <followupemail>
+                <rewrite>
+                    <adminhtml_rule_edit_tab_general>IWE_EmailReminder_Block_Adminhtml_Rule_Edit_Tab_General</adminhtml_rule_edit_tab_general>
+                </rewrite>
+            </followupemail>
+        </blocks>
+        <helpers>
+            <iwe_emailreminder>
+                <class>IWE_EmailReminder_Helper</class>
+            </iwe_emailreminder>
+        </helpers>
+    </global>
+</config>

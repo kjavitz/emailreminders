@@ -3,6 +3,10 @@
         <IWE_EmailReminder>
             <active>true</active>
             <codePool>local</codePool>
+            <depends>
+                <AW_Followupemail />
+                <Amasty_Perm />
+            </depends>
         </IWE_EmailReminder>
     </modules>
 </config>

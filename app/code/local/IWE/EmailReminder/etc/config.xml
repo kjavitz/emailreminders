@@ -42,5 +42,44 @@
                 </connection>
             </iwe_emailreminder_read>
         </resources>
+        <!-- Our customer events here -->
+        <events>
+            <rental_start>
+                <observers>
+                    <iwe_emailreminder>
+                        <type>singleton</type>
+                        <class>IWE_EmailReminder_Model_Events</class>
+                        <method>rentalStart</method>
+                    </iwe_emailreminder>
+                </observers>
+            </rental_start>
+            <rental_end>
+                <observers>
+                    <iwe_emailreminder>
+                        <type>singleton</type>
+                        <class>IWE_EmailReminder_Model_Events</class>
+                        <method>rentalEnd</method>
+                    </iwe_emailreminder>
+                </observers>
+            </rental_end>
+            <quote_sent>
+                <observers>
+                    <iwe_emailreminder>
+                        <type>singleton</type>
+                        <class>IWE_EmailReminder_Model_Events</class>
+                        <method>quoteSent</method>
+                    </iwe_emailreminder>
+                </observers>
+            </quote_sent>
+            <quote_processed>
+                <observers>
+                    <iwe_emailreminder>
+                        <type>singleton</type>
+                        <class>IWE_EmailReminder_Model_Events</class>
+                        <method>quoteProcessed</method>
+                    </iwe_emailreminder>
+                </observers>
+            </quote_processed>
+        </events>
     </global>
 </config>

@@ -89,7 +89,7 @@ class IWE_EmailReminder_Block_Adminhtml_Rule_Edit_Tab_General extends AW_Followu
             array(
                 'label' => $this->__('Event'),
                 'name' => 'event_type',
-                'values' => AW_Followupemail_Model_Source_Rule_Types::toOptionArray(),
+                'values' => IWE_EmailReminder_Model_Source_Rule_Types::toOptionArray(),
                 'required' => true,
                 'onchange' => 'checkEventType()',
             )

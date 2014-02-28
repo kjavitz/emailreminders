@@ -36,15 +36,10 @@ class IWE_EmailReminder_Model_Events extends AW_Followupemail_Model_Events
         }
     }
 
+    /*
     public function quoteSent($eventData){
-        $ruleIds = Mage::getModel('followupemail/mysql4_rule')
-            ->getRuleIdsByEventType(IWE_EmailReminder_Model_Source_Rule_Types::RULE_TYPE_QUOTE_SENT);
-        if (count($ruleIds)) {
-            foreach ($ruleIds as $ruleId) {
-
-            }
-        }
     }
+    */
 
     public function quoteProcessed($eventData){
         $ruleIds = Mage::getModel('followupemail/mysql4_rule')

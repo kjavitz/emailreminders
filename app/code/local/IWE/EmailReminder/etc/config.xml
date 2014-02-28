@@ -68,6 +68,7 @@
                     </iwe_emailreminder>
                 </observers>
             </rental_end>
+            <!--
             <quote_sent>
                 <observers>
                     <iwe_emailreminder>
@@ -77,6 +78,7 @@
                     </iwe_emailreminder>
                 </observers>
             </quote_sent>
+            -->
             <r4q_adminhtml_quote_create_process_data>
                 <observers>
                     <iwe_emailreminder>

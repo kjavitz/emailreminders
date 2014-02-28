@@ -64,7 +64,7 @@ class IWE_EmailReminder_Model_Rule extends AW_Followupemail_Model_Rule
             //adding our custom events here
             case IWE_EmailReminder_Model_Source_Rule_Types::RULE_TYPE_RENTAL_START :
             case IWE_EmailReminder_Model_Source_Rule_Types::RULE_TYPE_RENTAL_END :
-            case IWE_EmailReminder_Model_Source_Rule_Types::RULE_TYPE_QUOTE_SENT :
+            //case IWE_EmailReminder_Model_Source_Rule_Types::RULE_TYPE_QUOTE_SENT :
             case IWE_EmailReminder_Model_Source_Rule_Types::RULE_TYPE_QUOTE_PROCESSED :
             //adding our custom events here
             case AW_Followupemail_Model_Source_Rule_Types::RULE_TYPE_CUSTOMER_NEW :

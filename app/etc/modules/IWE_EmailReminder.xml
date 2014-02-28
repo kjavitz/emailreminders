@@ -6,6 +6,7 @@
             <depends>
                 <AW_Followupemail />
                 <Amasty_Perm />
+                <ITwebexperts_Request4quote />
             </depends>
         </IWE_EmailReminder>
     </modules>

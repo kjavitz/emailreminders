@@ -50,7 +50,7 @@
         </resources>
         <!-- Our customer events here -->
         <events>
-            <rental_start>
+            <sales_order_place_after>
                 <observers>
                     <iwe_emailreminder>
                         <type>singleton</type>
@@ -58,8 +58,8 @@
                         <method>rentalStart</method>
                     </iwe_emailreminder>
                 </observers>
-            </rental_start>
-            <rental_end>
+            </sales_order_place_after>
+            <sales_order_place_after>
                 <observers>
                     <iwe_emailreminder>
                         <type>singleton</type>
@@ -67,7 +67,7 @@
                         <method>rentalEnd</method>
                     </iwe_emailreminder>
                 </observers>
-            </rental_end>
+            </sales_order_place_after>
             <!--
             <quote_sent>
                 <observers>

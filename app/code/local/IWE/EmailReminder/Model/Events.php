@@ -4,7 +4,13 @@ class IWE_EmailReminder_Model_Events extends AW_Followupemail_Model_Events
     public function rentalStart($eventData){
         $ruleIds = Mage::getModel('followupemail/mysql4_rule')
             ->getRuleIdsByEventType(IWE_EmailReminder_Model_Source_Rule_Types::RULE_TYPE_RENTAL_START);
-        $customerId = 0; //Need to load the customer here
+        $order = $eventData->getOrder();
+        $customerId = $order->getCustomerId();
+        $startDate = $order->getData('start_datetime');
+        if(!$customerId || !$startDate){
+            return false;
+        }
+
         if (count($ruleIds)) {
             foreach ($ruleIds as $ruleId) {
                 $canProcess = true;

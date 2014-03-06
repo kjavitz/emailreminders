@@ -314,3 +314,14 @@ app/code/local/Excellence/
 app/code/community/BL/
 app/code/community/Asperience/
 app/etc/modules/ITwebexperts_Itwebcommon.xml
+app/etc/modules/ITwebexperts_Rshipping.xml
+app/etc/modules/Aschroder_SMTPPro.xml
+app/etc/modules/Aoe_Scheduler.xml
+app/design/frontend/base/default/template/rshipping/
+app/design/frontend/base/default/layout/rshipping.xml
+app/design/adminhtml/default/default/template/rshipping/
+app/design/adminhtml/default/default/template/aoe_scheduler/
+app/design/adminhtml/default/default/layout/rshipping.xml
+app/design/adminhtml/default/default/layout/aoe_scheduler/
+app/code/community/Aschroder/
+app/code/community/Aoe/

@@ -55,16 +55,7 @@
                     <iwe_emailreminder>
                         <type>singleton</type>
                         <class>IWE_EmailReminder_Model_Events</class>
-                        <method>rentalStart</method>
-                    </iwe_emailreminder>
-                </observers>
-            </sales_order_place_after>
-            <sales_order_place_after>
-                <observers>
-                    <iwe_emailreminder>
-                        <type>singleton</type>
-                        <class>IWE_EmailReminder_Model_Events</class>
-                        <method>rentalEnd</method>
+                        <method>rentalFollowUpEmail</method>
                     </iwe_emailreminder>
                 </observers>
             </sales_order_place_after>

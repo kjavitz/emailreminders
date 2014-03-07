@@ -8,8 +8,11 @@ class IWE_EmailReminder_Model_Events extends AW_Followupemail_Model_Events
             ->getRuleIdsByEventType($ruleType);
         $order = $eventData->getOrder();
         $customerId = $order->getCustomerId();
-        $startDate = $order->getData('start_datetime');
-        if(!$customerId || !$startDate){
+        $dateOffset = $order->getData('start_datetime');
+        if($ruleType == IWE_EmailReminder_Model_Source_Rule_Types::RULE_TYPE_RENTAL_END){
+            $dateOffset = $order->getData('end_datetime');
+        }
+        if(!$customerId || !$dateOffset){
             return false;
         }
 
@@ -29,7 +32,7 @@ class IWE_EmailReminder_Model_Events extends AW_Followupemail_Model_Events
                     $params = array();
                     $objects = array();
                     $params['customer_id'] = $customerId;
-                    Mage::getModel('iwe_emailreminder/rule')->load($ruleId)->process($params, $objects, $startDate);
+                    Mage::getModel('iwe_emailreminder/rule')->load($ruleId)->process($params, $objects, $dateOffset);
                 }
             }
         }
